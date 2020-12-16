@@ -50,7 +50,8 @@ public class Brackets20 {
 //        String s = "([])";
 //        String s = "([{}])";
 //
-        String s = ")]";
+//        String s = ")]";
+        String s = "())";
 //        String s = "())";
         boolean valid = brackets.isValid(s);
         System.out.println("valid = " + valid);

@@ -10,7 +10,7 @@ import com.example.algorithm.bean.ListNode;
 public class ReverseList206 {
     //反转链表
     public ListNode reverseList(ListNode head) {
-        //记录上一个节点，默认为null，因为单链表的最后一个节点的下一个节目为null
+        //记录上一个节点，默认为null，因为单链表的最后一个节点的下一个节点为null
         ListNode pre = null;
         //记录当前节点
         ListNode cur = head;
@@ -20,9 +20,9 @@ public class ReverseList206 {
             ListNode next = cur.next;
             //把当前节点的下一个节目指向上一个节点
             cur.next = pre;
-            //把当前节点赋值给上一个节目，为了下次继续赋值给当前节点的上一个节目
+            //把当前节点赋值给上一个节点，为了下次继续赋值给当前节点的上一个节点
             pre = cur;
-            //把当前节点的下一个节目赋值给当前节点，这样就能反向指向了
+            //把当前节点的下一个节点赋值给当前节点，这样就能反向指向了
             cur = next;
         }
         return pre;
