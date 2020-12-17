@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * @author tianxiaoyang
  * @date 2020-12-16 09:56
- * @describe 有效的括号，https://leetcode-cn.com/problems/valid-parentheses/solution/
+ * @describe 有效的括号，https://leetcode-cn.com/problems/valid-parentheses
  */
 public class Brackets20 {
 

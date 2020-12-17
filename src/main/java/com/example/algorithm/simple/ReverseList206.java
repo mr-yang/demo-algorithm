@@ -5,7 +5,7 @@ import com.example.algorithm.bean.ListNode;
 /**
  * @author tianxiaoyang
  * @date 2020-12-16 09:40
- * @describe 链表反转，https://leetcode-cn.com/problems/reverse-linked-list/solution/
+ * @describe 链表反转，https://leetcode-cn.com/problems/reverse-linked-list
  */
 public class ReverseList206 {
     //反转链表
@@ -40,13 +40,14 @@ public class ReverseList206 {
         println(node1);
         ReverseList206 reverseList = new ReverseList206();
         ListNode listNode = reverseList.reverseList(node1);
+        System.out.println();
         System.out.println("反转之后的链表");
         println(listNode);
     }
 
     private static void println(ListNode listNode) {
         while (listNode!= null){
-            System.out.println("listNode = " + listNode.val);
+            System.out.print(listNode.val +"->");
             listNode = listNode.next;
         }
     }
